@@ -11,7 +11,6 @@ angular.module('filtersModule', []).filter('placeFilter', ['$filter', function($
 }])
 .filter('dateFilter', ['$filter', function($filter){
     return function(input, val, key){
-
         var tempArr = []
         if(Object.prototype.toString.call(input) === '[object Array]' ){
             input.forEach(function(item){

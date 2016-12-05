@@ -29,9 +29,12 @@ angular.module('searchFormModule', []).directive('searchForm', ['$rootScope', fu
 
             $rootScope.$broadcast('SEARCH_CALLBACK', {scope: $scope, callbackName: 'search'});
             $rootScope.$broadcast('SLIDER_SEARCH_CALLBACK', {scope: $scope, callbackName: 'sliderSearch'});
-
             transclude($scope, function(clone, scope) {
                 iElem.append(clone);
+            });
+
+             $rootScope.$on('TAB_SELECT', function(event){
+                $scope.reset();
             });
         }
     }

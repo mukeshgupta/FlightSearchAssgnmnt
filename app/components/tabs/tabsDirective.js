@@ -14,6 +14,8 @@ angular.module('tabsModule', []).directive('tabs', function() {
                     pane.selected = false;
                 });
                 pane.selected = true;
+                //$rootScope.$broadcast('TAB_SELECT');
+           
             };
 
             this.addPane = function(pane) {

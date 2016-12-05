@@ -104,6 +104,14 @@ header .flight-logo{
     background: url(images/Airplane-big-icon.png) no-repeat;
     background-size: 100px 82px;
 }
+
+div.padded-top-10{
+    padding-top: 10px;
+}
+
+div.relative-pos{
+    position: relative;
+}
 /*================= COMMON CSS END =================*/
 
 
@@ -276,7 +284,7 @@ header .flight-logo{
 }
 .tabbable{
     margin: auto;
-    width: 80%;
+    width: 83%;
     box-shadow: 0px 0px 30px dimgrey;
     background: white;
 }
@@ -317,7 +325,8 @@ header .flight-logo{
 }
    
 #parent_div_1, #parent_div_2, #parent_div_3{
-   width: 180px;
+   min-width: 250px;
+   width: 250px;
     height: 100px;
     /* border: 1px solid red; */
     margin-right: 10px;
